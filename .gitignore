@@ -8,3 +8,9 @@ Navigation_Pixels.ipynb
 
 checkpoint_2000_ep.pth
 checkpoint_blue.pth
+
+VisualBanana_Windows_x86_64*
+
+.idea
+
+.ipynb_checkpoints
