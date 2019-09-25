@@ -12,7 +12,7 @@
 
 For this project, an agent is trained to collect bananas in a large, square world.  
 
-![Trained Agent][image1] <img src="assets/banana_env.png" width="161">
+![Trained Agent][image1] <img src="assets/banana_env.png" width="300">
 
 
 A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
