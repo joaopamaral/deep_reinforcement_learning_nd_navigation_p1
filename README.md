@@ -1,6 +1,7 @@
 [//]: # (Image References)
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
+[banana_env]: assets/banana_env.png
 [chart_yellow]: assets/chart_yellow.png
 
 # Udacity Deep Reinforcement Learning Nanodegree
@@ -11,7 +12,8 @@
 
 For this project, an agent is trained to collect bananas in a large, square world.  
 
-![Trained Agent][image1]
+![Trained Agent][image1] <img src="assets/banana_env.png" width="161">
+
 
 A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
 
