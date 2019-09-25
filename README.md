@@ -67,7 +67,7 @@ To set up your python environment to run the code in this repository, follow the
 2. Install all dependencies from `requirements.txt`:
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 3. Install Pytorch version 0.4.0 with your correct Cuda version (in my case, I'm using cuda 10.0).
