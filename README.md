@@ -76,6 +76,12 @@ pip install -r requirements.txt
 conda install -n drlnd pytorch=0.4.0 cudatoolkit=10.0 -c pytorch
 ```
 
+4 - Create an IPython kernel for the drlnd environment.
+
+```bash
+python -m ipykernel install --user --name drlnd --display-name "drlnd"
+```
+
 ### Instructions
 
 Follow the instructions in `Report.ipynb` to get started with training the agent!
