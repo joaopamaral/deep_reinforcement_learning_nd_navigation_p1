@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from torchsummary import summary
 
 
 class QNetwork(nn.Module):
@@ -17,6 +18,7 @@ class QNetwork(nn.Module):
             fc2_units (int): Number of nodes in second hidden layer
         """
         super(QNetwork, self).__init__()
+        self.input_size = state_size
         self.seed = torch.manual_seed(seed)
         self.fc1 = nn.Linear(state_size, fc1_units)
         self.fc2 = nn.Linear(fc1_units, fc2_units)
@@ -27,3 +29,6 @@ class QNetwork(nn.Module):
         x = F.relu(self.fc1(state))
         x = F.relu(self.fc2(x))
         return self.fc3(x)
+
+    def summary(self):
+        summary(self, (self.input_size, ))
