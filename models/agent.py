@@ -59,7 +59,7 @@ class Agent:
         state = torch.from_numpy(state).float().unsqueeze(0).to(device)
         self.qnetwork_local.eval()
         with torch.no_grad():
-            action_values = self.qnetwork_local(state)
+            action_values = self.qnetwork_local.to(device)(state)
         self.qnetwork_local.train()
 
         # Epsilon-greedy action selection
@@ -111,4 +111,4 @@ class Agent:
 
     def qnetwork_summary(self):
         print('- Agent Q Network Summary (both local and target): ')
-        self.qnetwork_local.summary()
+        self.qnetwork_local.to(device).summary()
