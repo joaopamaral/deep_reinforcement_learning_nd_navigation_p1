@@ -94,11 +94,10 @@ In episode 600, the agent achieved the expected result :+1: (score >= 13). We ke
 
 So let's see what happen to the agent:
 
-* We started with a random agent:
-<img src="assets/random_agent.gif" width="400">
+| We started with a random agent  | After 2000 episodes he learned to collect yellow bananas  |
+|---|---|
+| <img src="assets/random_agent.gif" width="400">  |  <img src="assets/agent_yellow.gif" width="400"> |
 
-* After 2000 episodes he learned to collect yellow bananas:
-<img src="assets/agent_yellow.gif" width="400">
 
 #### Bonus
 
